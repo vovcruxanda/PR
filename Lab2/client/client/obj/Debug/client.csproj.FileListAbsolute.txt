@@ -1,0 +1,29 @@
+C:\Users\catal\Desktop\client\client\obj\Debug\client.csproj.AssemblyReference.cache
+C:\Users\catal\Desktop\client\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\catal\Desktop\client\client\bin\Debug\client.exe.config
+C:\Users\catal\Desktop\client\client\bin\Debug\client.exe
+C:\Users\catal\Desktop\client\client\bin\Debug\client.pdb
+C:\Users\catal\Desktop\client\client\obj\Debug\client.exe
+C:\Users\catal\Desktop\client\client\obj\Debug\client.pdb
+C:\Users\catal\Desktop\Lab2\client\client\bin\Debug\client.exe.config
+C:\Users\catal\Desktop\Lab2\client\client\bin\Debug\client.exe
+C:\Users\catal\Desktop\Lab2\client\client\bin\Debug\client.pdb
+C:\Users\catal\Desktop\Lab2\client\client\obj\Debug\client.csproj.AssemblyReference.cache
+C:\Users\catal\Desktop\Lab2\client\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\catal\Desktop\Lab2\client\client\obj\Debug\client.exe
+C:\Users\catal\Desktop\Lab2\client\client\obj\Debug\client.pdb
+C:\Users\catal\Desktop\Programarea in retea\Lab2\client\client\bin\Debug\client.exe.config
+C:\Users\catal\Desktop\Programarea in retea\Lab2\client\client\bin\Debug\client.exe
+C:\Users\catal\Desktop\Programarea in retea\Lab2\client\client\bin\Debug\client.pdb
+C:\Users\catal\Desktop\Programarea in retea\Lab2\client\client\obj\Debug\client.csproj.AssemblyReference.cache
+C:\Users\catal\Desktop\Programarea in retea\Lab2\client\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\catal\Desktop\Programarea in retea\Lab2\client\client\obj\Debug\client.exe
+C:\Users\catal\Desktop\Programarea in retea\Lab2\client\client\obj\Debug\client.pdb
+D:\Univer\Lab2\client\client\bin\Debug\client.exe.config
+D:\Univer\Lab2\client\client\bin\Debug\client.exe
+D:\Univer\Lab2\client\client\bin\Debug\client.pdb
+D:\Univer\Lab2\client\client\obj\Debug\client.csproj.AssemblyReference.cache
+D:\Univer\Lab2\client\client\obj\Debug\client.csproj.SuggestedBindingRedirects.cache
+D:\Univer\Lab2\client\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+D:\Univer\Lab2\client\client\obj\Debug\client.exe
+D:\Univer\Lab2\client\client\obj\Debug\client.pdb

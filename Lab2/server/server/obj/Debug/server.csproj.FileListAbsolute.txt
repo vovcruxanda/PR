@@ -1,0 +1,29 @@
+C:\Users\catal\Desktop\server\server\bin\Debug\server.exe.config
+C:\Users\catal\Desktop\server\server\bin\Debug\server.exe
+C:\Users\catal\Desktop\server\server\bin\Debug\server.pdb
+C:\Users\catal\Desktop\server\server\obj\Debug\server.csproj.AssemblyReference.cache
+C:\Users\catal\Desktop\server\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+C:\Users\catal\Desktop\server\server\obj\Debug\server.exe
+C:\Users\catal\Desktop\server\server\obj\Debug\server.pdb
+C:\Users\catal\Desktop\Lab2\server\server\bin\Debug\server.exe.config
+C:\Users\catal\Desktop\Lab2\server\server\bin\Debug\server.exe
+C:\Users\catal\Desktop\Lab2\server\server\bin\Debug\server.pdb
+C:\Users\catal\Desktop\Lab2\server\server\obj\Debug\server.csproj.AssemblyReference.cache
+C:\Users\catal\Desktop\Lab2\server\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+C:\Users\catal\Desktop\Lab2\server\server\obj\Debug\server.exe
+C:\Users\catal\Desktop\Lab2\server\server\obj\Debug\server.pdb
+C:\Users\catal\Desktop\Programarea in retea\Lab2\server\server\bin\Debug\server.exe.config
+C:\Users\catal\Desktop\Programarea in retea\Lab2\server\server\bin\Debug\server.exe
+C:\Users\catal\Desktop\Programarea in retea\Lab2\server\server\bin\Debug\server.pdb
+C:\Users\catal\Desktop\Programarea in retea\Lab2\server\server\obj\Debug\server.csproj.AssemblyReference.cache
+C:\Users\catal\Desktop\Programarea in retea\Lab2\server\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+C:\Users\catal\Desktop\Programarea in retea\Lab2\server\server\obj\Debug\server.exe
+C:\Users\catal\Desktop\Programarea in retea\Lab2\server\server\obj\Debug\server.pdb
+D:\Univer\Lab2\server\server\bin\Debug\server.exe.config
+D:\Univer\Lab2\server\server\bin\Debug\server.exe
+D:\Univer\Lab2\server\server\bin\Debug\server.pdb
+D:\Univer\Lab2\server\server\obj\Debug\server.csproj.AssemblyReference.cache
+D:\Univer\Lab2\server\server\obj\Debug\server.csproj.SuggestedBindingRedirects.cache
+D:\Univer\Lab2\server\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+D:\Univer\Lab2\server\server\obj\Debug\server.exe
+D:\Univer\Lab2\server\server\obj\Debug\server.pdb
