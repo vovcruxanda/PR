@@ -1,0 +1,64 @@
+UDP SERVER
+
+1. Declararea spațiului de nume și a clasei:
+   - Codul începe prin declararea clasei `Program` în cadrul spațiului de nume `System`.
+
+2. Metoda principală:
+   - Metoda `Main` este punctul de intrare al aplicației.
+   - Aceasta inițializează numărul de port la 8000.
+   - Creează un socket UDP (`serverSocket`) folosind clasa `Socket` cu familia de adrese specificată (`AddressFamily.InterNetwork`), tipul de socket (`SocketType.Dgram` pentru socket-uri de datagramă) și tipul de protocol (`ProtocolType.Udp`).
+Dgram: Provides datagrams, which are connectionless messages of a fixed maximum length.A datagram socket supports the bidirectional flow of data, which is not sequenced, reliable, or unduplicated.
+   - Leagă socket-ul la punctul final local folosind metoda `Bind` cu `IPAddress.Any` ca adresă IP locală și portul specificat.
+   - Inițializează un dicționar (`clients`) pentru a stoca informațiile despre clienții conectați (adresa IP și numele asociat).
+   - Tipărește un mesaj care indică faptul că serverul a pornit.
+
+3. Bucle de recepție a mesajelor:
+   - Intră într-o buclă infinită pentru a asculta continuu mesajele primite de la clienți.
+   - Definește o variabilă `EndPoint` (`clientAddress`) pentru a stoca punctul final la distanță de la care a fost primit mesajul.
+   - Declară o matrice de octeți (`buffer`) pentru a stoca datele mesajului primit.
+   - Invocă metoda `ReceiveFrom` pe `serverSocket` pentru a primi un mesaj de la un client. Aceasta citește datele în `buffer` și actualizează `clientAddress` cu adresa clientului de la care au fost primite datele.
+4. Procesarea mesajelor:
+   - Verifică dacă clientul este o conexiune nouă, verificând dacă punctul său final nu se află deja în dicționarul `clients`.
+     - Dacă este un client nou, extrage numele din mesajul primit (se presupune că formatul mesajului este "JOIN <nume>") și îl adaugă în dicționarul `clients` împreună cu punctul final al clientului. Tipărește un mesaj care indică faptul că clientul s-a alăturat.
+   - Verifică dacă mesajul primit este un mesaj privat (`PRIVMSG`).
+     - În caz afirmativ, analizează numele destinatarului și conținutul mesajului, găsește punctul final al destinatarului din dicționarul `clients` și trimite mesajul către acesta.
+   - Verifică dacă mesajul primit este un mesaj de difuzare (`BROADCAST`).
+     - În caz afirmativ, recuperează numele expeditorului, construiește mesajul de difuzare și îl difuzează către toți clienții, cu excepția expeditorului.
+   - Dacă formatul mesajului nu se potrivește cu niciunul dintre formatele recunoscute, imprimă un mesaj de eroare.
+
+5. Bucle fără sfârșit:
+   - Serverul continuă să asculte mesajele primite la nesfârșit până când este oprit din exterior.
+
+Acest cod de server oferă coloana vertebrală pentru un server de chat UDP simplu, care poate gestiona mai mulți clienți simultan. Acesta primește mesaje, le procesează în funcție de tipul lor și le difuzează sau le transmite destinatarilor corespunzători.
+
+
+UDP client
+
+1. Namespace and Class Declaration:
+   - The code starts by declaring the `Program` class within the `System` namespace.
+
+2. Main Method:
+   - The `Main` method is the entry point of the application, taking command-line arguments as parameters (although they're not used in this case).
+   - It prompts the user to enter the IP address of the server they want to connect to.
+   - Initializes the `PORT` variable to 8000.
+   - Creates a UDP socket (`clientSocket`) using `Socket` class with the specified address family (`AddressFamily.InterNetwork`), socket type (`SocketType.Dgram` for datagram sockets), and protocol type (`ProtocolType.Udp`).
+   - Prompts the user to enter their name.
+   - Sends a message to the server to join the chat, containing the user's name (assumes the server expects messages in the format "JOIN <name>").
+   - Starts a new thread (`receiveThread`) to handle receiving messages from the server concurrently.
+
+3. Message Sending Loop:
+   - Enters an infinite loop to continuously read user input and send messages to the server.
+   - Reads user input from the console.
+   - If the user input starts with "/msg ", it parses the input to extract the recipient's name and the message content.
+     - If the input format is invalid, it prints an error message and continues to the next iteration of the loop.
+     - Otherwise, it constructs a message in the format "PRIVMSG <recipient_name> <message_content>" and sends it to the server.
+   - If the user input does not start with "/msg ", it constructs a broadcast message in the format "BROADCAST <message_content>" and sends it to the server.
+
+4. ReceiveMessages Method:
+   - This method is executed on a separate thread (`receiveThread`) and handles receiving messages from the server.
+   - It continuously listens for incoming messages from the server.
+   - Upon receiving a message, it reads the message content into a byte array (`buffer`).
+   - It prints the received message to the console by decoding the byte array to a string using ASCII encoding.
+
+5. Endless Loop:
+   - The client application continues to send messages and receive messages from the server indefinitely until it is stopped externally.
